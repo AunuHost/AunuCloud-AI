@@ -12,6 +12,8 @@ import Agents from "./pages/Agents";
 import Knowledge from "./pages/Knowledge";
 import Analytics from "./pages/Analytics";
 import Workflows from "./pages/Workflows";
+import Team from "./pages/Team";
+import Integrations from "./pages/Integrations";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
@@ -32,6 +34,8 @@ const App = () => (
             <Route path="/knowledge" element={<ProtectedRoute><Knowledge /></ProtectedRoute>} />
             <Route path="/workflows" element={<ProtectedRoute><Workflows /></ProtectedRoute>} />
             <Route path="/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
+            <Route path="/team" element={<ProtectedRoute><Team /></ProtectedRoute>} />
+            <Route path="/integrations" element={<ProtectedRoute><Integrations /></ProtectedRoute>} />
             <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
