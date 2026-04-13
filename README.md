@@ -1,16 +1,18 @@
 # AunuCloud AI Workspace
 
-AunuCloud is now structured as a larger AI workspace product instead of a single dashboard and chat demo.
+AunuCloud has been expanded into a broader AI workspace product rather than a single dashboard and chat demo.
 
-## Product surfaces
+## Workspace areas
 
-- `Dashboard`: high-level workspace overview, activity feed, and quick actions
-- `AI Chat`: streaming assistant chat with starter prompts and contextual side panels
-- `Agents`: specialist agent monitoring with deployment and capability cards
-- `Knowledge`: retrieval-oriented hub for source collections and ingestion flow
-- `Workflows`: orchestration view for intake, retrieval, execution, and human review
-- `Analytics`: mock operational metrics and weekly performance trend panels
-- `Settings`: workspace account, notification, and assistant behavior control center
+- `Dashboard`: workspace overview, activity feed, and action launcher
+- `AI Chat`: streaming assistant chat with starter prompts and context panels
+- `Agents`: specialist agent monitoring and operational visibility
+- `Knowledge`: retrieval-oriented source collections and ingestion flow
+- `Workflows`: orchestration stages across intake, retrieval, execution, and review
+- `Analytics`: operational metrics and trend visualization
+- `Team`: ownership, workload, and reviewer visibility
+- `Integrations`: connected stack overview and sync health
+- `Settings`: workspace account and behavior controls
 
 ## Stack
 
@@ -22,8 +24,10 @@ AunuCloud is now structured as a larger AI workspace product instead of a single
 - Supabase
 - shadcn/ui primitives
 
-## Notes
+## Implementation notes
 
-- The new pages currently use product-style mock data from `src/data/workspace.ts`.
-- The chat page still points to the existing Supabase edge function for streamed responses.
-- Build and test commands were intentionally not run in the latest update, per user request.
+- Product-style mock data lives in `src/data/workspace.ts`
+- The chat page still streams from the existing Supabase edge function
+- Desktop navigation is grouped by workspace and management sections
+- Mobile now includes a bottom shortcut rail for core surfaces
+- No build, test, or install commands were run during the latest expansion
